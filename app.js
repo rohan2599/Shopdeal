@@ -2,14 +2,16 @@ const express = require('express');
 const mongoose = require('mongoose');
 require("dotenv").config()
 
+//import
+const userRoutes = require('./routes/user.js');
+
+
 //app
 const app = express()
 
-//routes
-app.get("/",(req,res)=>{
+//routes middleware
 
-		res.send("Hello everyone");
-})
+app.use('/user',userRoutes);
 
 //db
 mongoose.connect(process.env.DATABASE,{
