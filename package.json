@@ -1,0 +1,26 @@
+{
+  "name": "Shopdeal",
+  "version": "1.0.0",
+  "description": "A  FullStack React Node MongoDB powered E-Commerce App with PayPal and Credit Card Payment along with Admin Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohan2599/Shopdeal.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohan2599/Shopdeal/issues"
+  },
+  "homepage": "https://github.com/rohan2599/Shopdeal#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.9",
+    "nodemon": "^1.19.1"
+  }
+}
