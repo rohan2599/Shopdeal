@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
-cconst bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 const cookieParser= require('cookie-parser');
 require("dotenv").config()
 
