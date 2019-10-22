@@ -8,7 +8,7 @@ const expressValidator =  require('express-validator');
 require("dotenv").config()
 
 //import
-const userRoutes = require('./routes/user.js');
+const authRoutes = require('./routes/auth.js');
 
 
 //app
@@ -21,7 +21,7 @@ app.use(cookieParser());
 app.use(expressValidator());
 
 
-app.use('/user',userRoutes);
+app.use('/api',authRoutes);
 
 
 mongoose.connect(process.env.DATABASE,{
