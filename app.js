@@ -9,6 +9,7 @@ require("dotenv").config()
 
 //import
 const authRoutes = require('./routes/auth.js');
+const userRoutes = require('./routes/user.js');
 
 
 //app
@@ -22,7 +23,7 @@ app.use(expressValidator());
 
 
 app.use('/api',authRoutes);
-
+app.use('/api', userRoutes);
 
 mongoose.connect(process.env.DATABASE,{
 
